@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import PassionateDevops from "./components/PassionateDevops";
+import Services from "./components/Services";
 import TechCard from "./components/TechCard";
 
 import TechImg1 from "../../assets/images/technologies-1-1024x435.png";
@@ -14,6 +15,7 @@ const Home = () => {
       <HeroSection />
       <PassionateDevops />
       <Technologies />
+      <Services />
     </>
   );
 };

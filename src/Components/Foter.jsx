@@ -10,12 +10,16 @@ import aws from "../assets/images/aws.png";
 
 const Foter = () => {
   return (
-    <footer className="bg-blue-500 text-white py-10 pl-12">
+    <footer className="  text-white py-10 pl-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h2 className="text-2xl font-bold mb-4">CloudArcOps</h2>
-            <p className="text-sm mb-4 pl-3 tracking-wider">BUILT ON TRUST</p>
+            <h2 className="text-2xl font-bold mb-4 text-blue-500">
+              CloudArcOps
+            </h2>
+            <p className="text-sm mb-4 pl-3 tracking-wider text-blue-500">
+              BUILT ON TRUST
+            </p>
             <div className="flex space-x-4 mb-6">
               <a href="#">
                 <img src={link} alt="LinkedIn" className=" w-10 h-10" />
@@ -40,7 +44,7 @@ const Foter = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white-500">
+            <h3 className="text-xl font-bold mb-4 text-white-500 text-blue-500">
               QUICK LINKS
             </h3>
             <ul className="flex space-x-4 mb-4">
@@ -67,7 +71,7 @@ const Foter = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white-500">
+            <h3 className="text-xl font-bold mb-4 text-white-500 text-blue-500">
               OUR OFFICES
             </h3>
             <ul className="space-y-4">
@@ -79,7 +83,7 @@ const Foter = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white-500">
+            <h3 className="text-xl font-bold mb-4 text-white-500 text-blue-500">
               CONTACT NUMBER
             </h3>
             <ul className="space-y-4">

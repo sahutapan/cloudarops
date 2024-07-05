@@ -1,26 +1,29 @@
+import cloud from "../../../assets/images/developer.svg";
+
 const PassionateDevops = () => {
   return (
-    <div className="flex gap-8 mx-24 justify-center items-center">
-      <img
-        src="https://iamops.io/wp-content/uploads/2024/02/partners.png"
-        className="rounded-3xl w-[400px] aspect-square"
-      />
-      <div className="flex flex-col gap-5">
-        <h2 className="text-[40px] font-bold leading-[1.4em]">
-          We are <span className="text-[#F56236] ">passionate</span> DevOps
+    <div className=" bg-[#001D39] grid grid-cols-1 md:grid-cols-2 px-10 md:px-40 justify-center mt-9 pb-9">
+      <div className="flex justify-center items-center p-4">
+        <img src={cloud} className="rounded-3xl w-[450px] aspect-square" />
+      </div>
+      <div className="flex flex-col gap-5 pt-4 ">
+        <h2 className="text-[40px] text-white font-bold leading-[1.4em]">
+          We are <span className="text-blue-500 ">Passionate</span> DevOps
         </h2>
-        <span className="flex flex-col gap-6 text-[20px] font-normal">
+        <span className="flex flex-col gap-6 text-[20px] font-normal text-white ">
           <p>
-            We breathe Terraform, eat EKS and Kubernetes, and dream about
-            Lambdas in our sleep. Our mission is to make your infrastructure and
-            CI/CD pipelines ready for scale.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+            fugiat, officia dolorum minus iure quae voluptate ipsam, atque
+            explicabo modi eveniet. Possimus adipisci fuga dolore mollitia ullam
+            quo laborum nulla!
           </p>
           <p>
-            We mitigate failure points, smooth performance, ensure uptime, and
-            minimize costs. When an incident happens, we take control and get
-            things up and running, even at 4:00 am.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+            fugiat, officia dolorum minus iure quae voluptate ipsam, atque
+            explicabo modi eveniet. Possimus adipisci fuga dolore mollitia ullam
+            quo laborum nulla!
           </p>
-          <p>We are your DevOps team. We are Cloudarops.</p>
+          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </span>
       </div>
     </div>
