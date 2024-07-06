@@ -10,7 +10,7 @@ import aws from "../assets/images/aws.png";
 
 const Foter = () => {
   return (
-    <footer className="  text-white py-10 pl-12">
+    <footer id="contact-footer" className="  text-white py-10 pl-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -94,7 +94,7 @@ const Foter = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-2 text-center">
+        <div className="mt-2 text-left pt-4 md:pt-0 md:text-center">
           <p>Privacy Policy</p>
           <p>© 2024 CloudArcOps LTD. All rights reserved.</p>
         </div>
