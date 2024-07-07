@@ -1,5 +1,17 @@
 import React, { useState } from "react";
 import Logo from "../assets/Logo";
+import DropDownMenu from "./DropDownMenu";
+
+const MENU_ITEMS = [
+  {
+    title: "Devops",
+    path: "",
+  },
+  {
+    title: "NOC 24/7",
+    path: "",
+  },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,9 +38,7 @@ const Navbar = () => {
                 HOME
               </a>
               <div className="relative">
-                <button className="text-gray-700 hover:text-blue-400 px-3 py-2 text-sm font-medium">
-                  SERVICES
-                </button>
+                <DropDownMenu title={"SERVICES"} menuItems={MENU_ITEMS} />
                 <div className="absolute hidden group-hover:block bg-white shadow-lg">
                   {/* Add your dropdown items here */}
                 </div>
