@@ -8,11 +8,11 @@ import ResourcesPage from "./pages/Resources/ResourcesPage";
 
 function App() {
   return (
-    <div className="bg-[#020D23]">
+    <div>
       <Headers />
 
-      {/* <HomePage /> */}
-      <ResourcesPage />
+      <HomePage />
+      {/* <ResourcesPage /> */}
       <Foter />
     </div>
   );
