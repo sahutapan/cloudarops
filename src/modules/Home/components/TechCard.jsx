@@ -1,10 +1,10 @@
 const TechCard = ({ text, src }) => {
   return (
-    <div className="w-[550px] h-[300px] flex flex-col  bg-white rounded-lg flex-wrap">
-      <p className="text-[26px] font-bold text-center mb-5  text-blue-500">
+    <div className="  md:w-[550px] md:h-[300px] flex flex-col bg-white rounded-lg shadow-2xl flex-wrap">
+      <p className="text-[26px] font-bold text-center mb-5 text-blue-500">
         {text}
       </p>
-      <img src={src} alt={text} />
+      <img src={src} alt={text} className="rounded-lg" />
     </div>
   );
 };
