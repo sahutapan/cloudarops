@@ -8,7 +8,7 @@ const Oursuccess = () => {
       <p className="text-center mb-8 text-base sm:text-lg">
         Here’s how we have helped our clients to overcome the DevOps challenges
       </p>
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      <div className=" grid grid-cols-1 md:grid-cols-3 px-10  gap-10 md:px-40  justify-center pt-12 pb-12">
         <div className=" bg-white rounded-xl shadow-2xl p-6 flex flex-col items-center text-center">
           <h3 className="text-lg sm:text-xl font-semibold mb-4">
             Complete infrastructure in{" "}

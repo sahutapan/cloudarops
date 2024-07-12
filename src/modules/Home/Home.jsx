@@ -9,6 +9,7 @@ import TechImg3 from "../../assets/images/technologies-3-1024x435.png";
 import TechImg4 from "../../assets/images/technologies-4-1024x435.png";
 import Technologies from "./components/Technologies";
 import Oursuccess from "./components/Oursuccess";
+import DeliverWithExpertise from "./components/DeliverWithExpertise";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <HeroSection />
       <PassionateDevops />
       <Oursuccess />
+      <DeliverWithExpertise />
       <Technologies />
       <Services />
     </>

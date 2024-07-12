@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className=" bg-[#FfFfFf] md:py-12 ">
+    <div className=" bg-[#F4F4F4] md:py-12 ">
       <div className="grid grid-cols-1 md:grid-cols-2 px-10  gap-10 md:px-40  justify-center pt-12 pb-12">
         <div className="pt-6">
           <h2 className="text-3xl font-extrabold text-balck mb-4 ">

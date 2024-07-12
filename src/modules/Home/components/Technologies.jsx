@@ -6,7 +6,7 @@ import TechImg3 from "../../../assets/images/technologies-3-1024x435.png";
 import TechImg4 from "../../../assets/images/technologies-4-1024x435.png";
 const Technologies = () => {
   return (
-    <div className=" bg-[#f4f4f4] pb-9 md:py-6">
+    <div className=" bg-[#ffffff] pb-9 md:py-6">
       <h2 className="text-4xl font-bold leading-relaxed text-center mt-5 ">
         <span className="text-blue-500">Technologies</span>
       </h2>
