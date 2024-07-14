@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Logo from "../assets/Logo";
 import DropDownMenu from "./DropDownMenu";
+import { Link } from "react-router-dom";
+import { paths } from "../const/path";
 
 const MENU_ITEMS = [
   {
@@ -9,11 +11,9 @@ const MENU_ITEMS = [
   },
   {
     title: "NOC 24/7",
-    path: "",
+    path: " ",
   },
 ];
-import { Link } from "react-router-dom";
-import { paths } from "../const/path";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
