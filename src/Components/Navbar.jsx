@@ -5,7 +5,7 @@ import DropDownMenu from "./DropDownMenu";
 const MENU_ITEMS = [
   {
     title: "Devops",
-    path: "",
+    path: " ",
   },
   {
     title: "NOC 24/7",
