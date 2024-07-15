@@ -10,7 +10,10 @@ import aws from "../assets/images/aws.png";
 
 const Foter = () => {
   return (
-    <footer id="contact-footer" className="  text-white py-10 pl-12">
+    <footer
+      id="contact-footer"
+      className=" bg-[#ECECEC] text-white py-10 pl-12"
+    >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -44,27 +47,27 @@ const Foter = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white-500 text-blue-500">
+            <h3 className="text-xl font-bold mb-4  text-blue-500">
               QUICK LINKS
             </h3>
             <ul className="flex space-x-4 mb-4">
               <li>
-                <a href="#" className="flex items-center">
+                <a href="#" className="flex items-center text-black">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="flex items-center">
+                <a href="#" className="flex items-center text-black">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#" className="flex items-center">
+                <a href="#" className="flex items-center text-black">
                   About us
                 </a>
               </li>
               <li>
-                <a href="#" className="flex items-center">
+                <a href="#" className="flex items-center text-black">
                   Resources
                 </a>
               </li>
@@ -76,7 +79,7 @@ const Foter = () => {
             </h3>
             <ul className="space-y-4">
               <li>
-                <p className="flex items-center">
+                <p className="flex items-center text-black">
                   <span className=" mr-2">📍</span> Surat, Gujarat
                 </p>
               </li>
@@ -87,16 +90,19 @@ const Foter = () => {
               CONTACT NUMBER
             </h3>
             <ul className="space-y-4">
-              <li>
-                <p className="flex items-center">+91 9999999999</p>
+              <li className="text-black">
+                <p className="flex items-center ">+91 9999999999</p>
                 <p>+91 9999999999</p>
               </li>
             </ul>
           </div>
         </div>
-        <div className="mt-2 text-left pt-4 md:pt-0 md:text-center">
+        <div className="mt-2 text-left text-black pt-4 md:pt-0 md:text-center">
           <p>Privacy Policy</p>
-          <p>© 2024 CloudArcOps LTD. All rights reserved.</p>
+          <p>
+            © 2024 <span className="text-blue-500">CloudArcOps LTD</span>. All
+            rights reserved.
+          </p>
         </div>
       </div>
     </footer>

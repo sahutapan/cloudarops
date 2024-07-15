@@ -1,5 +1,19 @@
 import React, { useState } from "react";
 import Logo from "../assets/Logo";
+import DropDownMenu from "./DropDownMenu";
+import { Link } from "react-router-dom";
+import { paths } from "../const/path";
+
+const MENU_ITEMS = [
+  {
+    title: "Devops",
+    path: " ",
+  },
+  {
+    title: "NOC 24/7",
+    path: " ",
+  },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,38 +27,42 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a href="/" className="flex-shrink-0 ">
+            <Link to={paths.home} className="flex-shrink-0 ">
               <Logo />
-            </a>
+            </Link>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a
-                href="#"
+              <Link
+                to={paths.home}
                 className="text-blue-400 px-3 py-2 text-sm font-medium"
               >
                 HOME
-              </a>
+              </Link>
               <div className="relative">
-                <button className="text-gray-700 hover:text-blue-400 px-3 py-2 text-sm font-medium">
-                  SERVICES
-                </button>
+                <DropDownMenu title={"SERVICES"} menuItems={MENU_ITEMS} />
                 <div className="absolute hidden group-hover:block bg-white shadow-lg">
                   {/* Add your dropdown items here */}
                 </div>
               </div>
               <div className="relative">
-                <button className="text-gray-700 hover:text-blue-400 px-3 py-2 text-sm font-medium">
+                <Link
+                  to={paths.aboutus}
+                  className="text-gray-700 hover:text-blue-400 px-3 py-2 text-sm font-medium"
+                >
                   ABOUT US
-                </button>
+                </Link>
                 <div className="absolute hidden group-hover:block bg-white shadow-lg">
                   {/* Add your dropdown items here */}
                 </div>
               </div>
               <div className="relative">
-                <button className="text-gray-700 hover:text-blue-400 px-3 py-2 text-sm font-medium">
+                <Link
+                  to={paths.resources}
+                  className="text-gray-700 hover:text-blue-400 px-3 py-2 text-sm font-medium"
+                >
                   RESOURCES
-                </button>
+                </Link>
                 <div className="absolute hidden group-hover:block bg-white shadow-lg">
                   {/* Add your dropdown items here */}
                 </div>
