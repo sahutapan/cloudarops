@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Dhruv Patel",
+    "title": "CEO, FOUNDER",
+    "location": "Surat,Gujarat",
+    "imageSrc": "/src/assets/images/dhruv.jpeg"
+  },
+  {
+    "name": "Satvik",
+    "title": "CEO, CO-FOUNDER",
+    "location": "Surat,Gujarat",
+    "imageSrc": "/src/assets/images/satvik.PNG"
+  }
+]

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../assets/Logo";
 import DropDownMenu from "./DropDownMenu";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { paths } from "../const/path";
 
 const MENU_ITEMS = [
@@ -17,9 +17,16 @@ const MENU_ITEMS = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const [activePath, setActivePath] = useState(location.pathname);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleLinkClick = (path) => {
+    setActivePath(path);
+    setIsOpen(false);
   };
 
   return (
@@ -27,7 +34,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link to={paths.home} className="flex-shrink-0 ">
+            <Link to={paths.home} className="flex-shrink-0">
               <Logo />
             </Link>
           </div>
@@ -35,7 +42,10 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-4">
               <Link
                 to={paths.home}
-                className="text-blue-400 px-3 py-2 text-sm font-medium"
+                onClick={() => handleLinkClick(paths.home)}
+                className={`${
+                  activePath === paths.home ? "text-blue-400" : "text-gray-700"
+                } px-3 py-2 text-sm font-medium`}
               >
                 HOME
               </Link>
@@ -45,29 +55,28 @@ const Navbar = () => {
                   {/* Add your dropdown items here */}
                 </div>
               </div>
-              <div className="relative">
-                <Link
-                  to={paths.aboutus}
-                  className="text-gray-700 hover:text-blue-400 px-3 py-2 text-sm font-medium"
-                >
-                  ABOUT US
-                </Link>
-                <div className="absolute hidden group-hover:block bg-white shadow-lg">
-                  {/* Add your dropdown items here */}
-                </div>
-              </div>
-              <div className="relative">
-                <Link
-                  to={paths.resources}
-                  className="text-gray-700 hover:text-blue-400 px-3 py-2 text-sm font-medium"
-                >
-                  RESOURCES
-                </Link>
-                <div className="absolute hidden group-hover:block bg-white shadow-lg">
-                  {/* Add your dropdown items here */}
-                </div>
-              </div>
-
+              <Link
+                to={paths.aboutus}
+                onClick={() => handleLinkClick(paths.aboutus)}
+                className={`${
+                  activePath === paths.aboutus
+                    ? "text-blue-400"
+                    : "text-gray-700"
+                } px-3 py-2 text-sm font-medium`}
+              >
+                ABOUT US
+              </Link>
+              <Link
+                to={paths.resources}
+                onClick={() => handleLinkClick(paths.resources)}
+                className={`${
+                  activePath === paths.resources
+                    ? "text-blue-400"
+                    : "text-gray-700"
+                } px-3 py-2 text-sm font-medium`}
+              >
+                RESOURCES
+              </Link>
               <a
                 href="#contact-footer"
                 className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm font-medium"
@@ -109,30 +118,40 @@ const Navbar = () => {
       <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <hr />
-          <a
-            href="#"
-            className="text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
+          <Link
+            to={paths.home}
+            onClick={() => handleLinkClick(paths.home)}
+            className={`${
+              activePath === paths.home ? "text-blue-400" : "text-gray-700"
+            } block px-3 py-2 rounded-md text-base font-medium`}
           >
             HOME
-          </a>
+          </Link>
           <a
             href="#"
             className="text-gray-700 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
           >
             SERVICES
           </a>
-          <a
-            href="#"
-            className="text-gray-700 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
+          <Link
+            to={paths.aboutus}
+            onClick={() => handleLinkClick(paths.aboutus)}
+            className={`${
+              activePath === paths.aboutus ? "text-blue-400" : "text-gray-700"
+            } block px-3 py-2 rounded-md text-base font-medium`}
           >
             ABOUT US
-          </a>
-          <a
-            href="#"
-            className="text-gray-700 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
+          </Link>
+
+          <Link
+            to={paths.resources}
+            onClick={() => handleLinkClick(paths.resources)}
+            className={`${
+              activePath === paths.resources ? "text-blue-400" : "text-gray-700"
+            } block px-3 py-2 rounded-md text-base font-medium`}
           >
             RESOURCES
-          </a>
+          </Link>
 
           <a
             href="#contact-footer"
