@@ -10,9 +10,9 @@ const Team = () => {
         <h2 className="text-3xl font-bold text-center mb-8">
           Our <span className="text-blue-500">Amazing</span> Team Members
         </h2>
-        <div className="mb-8 pl-10 pr-10">
+        <div className="mb-8 px-4">
           <h3 className="text-2xl font-bold text-left mb-4">Founding Team</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5   md:px-0 lg:px-0 sm:px-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {foundingMembers.map((member) => (
               <CardAbout
                 key={member.name}
@@ -24,11 +24,11 @@ const Team = () => {
             ))}
           </div>
         </div>
-        <div className="mb-8 pl-10 pr-10 ">
+        <div className="mb-8 px-4">
           <h3 className="text-2xl font-bold text-left mb-4 pt-7">
             Team Leaders
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5  md:px-0 lg:px-0 sm:px-0 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {teamleaders.map((member) => (
               <CardAbout
                 key={member.name}
@@ -40,7 +40,6 @@ const Team = () => {
             ))}
           </div>
         </div>
-        {/* Add more sections if needed */}
       </div>
     </div>
   );
