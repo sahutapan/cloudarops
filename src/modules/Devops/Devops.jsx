@@ -1,4 +1,5 @@
 import DevopsBanner from "./components/DevopsBanner";
+import DevOpsServices from "./components/DevOpsServices";
 import DevOpsTeam from "./components/DevopsTeam";
 
 const Devops = () => {
@@ -6,6 +7,7 @@ const Devops = () => {
     <div>
       <DevopsBanner />
       <DevOpsTeam />
+      <DevOpsServices />
     </div>
   );
 };

@@ -4,9 +4,9 @@ import { forwardRef } from "react";
 import { classNames } from "../utils/classNames";
 
 const VARIANTS = {
-  primary: "bg-blue text-white hover:bg-cyanBlue focus:ring-blue-500",
+  primary: "bg-customblue text-white hover:bg-cyanBlue focus:ring-blue-500",
   rounded:
-    "bg-blue text-white hover:bg-cyanBlue focus:ring-blue-500 rounded-full",
+    "bg-customblue text-white hover:bg-cyanBlue focus:ring-blue-500 rounded-full",
 };
 
 const SIZES = {
