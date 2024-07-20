@@ -1,7 +1,11 @@
+import DevopsBanner from "./components/DevopsBanner";
+import DevOpsTeam from "./components/DevopsTeam";
+
 const Devops = () => {
   return (
     <div>
-      <h1>DevOps</h1>
+      <DevopsBanner />
+      <DevOpsTeam />
     </div>
   );
 };
