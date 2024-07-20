@@ -1,9 +1,10 @@
 import TechImg4 from "../../../assets/images/herops.png";
+
 const HeroSection = () => {
   return (
-    <div className="relative h-screen flex flex-col md:flex-row justify-center md:justify-between items-center p-4 md:p-0">
-      <div className="relative flex flex-col gap-5 text-center md:text-left md:ml-11">
-        <h1 className="absolute  top-[-150%] md:bottom-auto left-[10%] md:left-0 text-4xl text-black md:text-[76px] font-semibold leading-[1.2]">
+    <div className="relative min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center p-4 md:p-8">
+      <div className="flex flex-col gap-5 text-center md:text-left md:ml-11">
+        <h1 className="text-4xl md:text-[76px] font-semibold leading-tight">
           <span className="text-blue-500">DevOps</span> done right!
         </h1>
         <span className="bg-gradient-to-r from-[#0097B2] to-[#57D9D9] h-2 w-8 mx-auto md:mx-0"></span>
@@ -12,7 +13,7 @@ const HeroSection = () => {
         </h3>
       </div>
       <img
-        className="w-full md:max-w-[700px] md:mt-0"
+        className="w-full max-w-xs md:max-w-md lg:max-w-lg mt-4 md:mt-0"
         src={TechImg4}
         alt="Cloudarops"
       />

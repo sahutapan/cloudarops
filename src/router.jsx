@@ -7,6 +7,7 @@ import ResourcesPage from "./pages/Resources/ResourcesPage";
 import DevopsPage from "./pages/Services/Devops/DevopsPage";
 import NOCPage from "./pages/Services/NOC/NOCPage";
 import { paths } from "./const/path";
+import ContactUs from "./modules/ContactUS";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       },
       { path: paths.aboutus, element: <AboutUsPage /> },
       { path: paths.resources, element: <ResourcesPage /> },
+      { path: paths.contact, element: <ContactUs /> },
     ],
   },
 ]);

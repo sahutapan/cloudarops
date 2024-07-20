@@ -1,5 +1,6 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import ChevronDownIcon from "../assets/icon/ChevronDownIcon";
+import { Link } from "react-router-dom";
 
 const DropDownMenu = ({ title, menuItems }) => {
   return (
@@ -25,9 +26,12 @@ const DropDownMenu = ({ title, menuItems }) => {
       >
         {menuItems?.map((menuItem) => (
           <MenuItem>
-            <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-slate-700  data-[focus]:text-white">
+            <Link
+              to={menuItem.path}
+              className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-slate-700  data-[focus]:text-white"
+            >
               {menuItem?.title}
-            </button>
+            </Link>
           </MenuItem>
         ))}
       </MenuItems>
