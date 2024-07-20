@@ -77,12 +77,13 @@ const Navbar = () => {
               >
                 RESOURCES
               </Link>
-              <a
-                href="#contact-footer"
+              <Link
+                to={paths.contact}
+                onClick={() => handleLinkClick(paths.contact)}
                 className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm font-medium"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -153,12 +154,13 @@ const Navbar = () => {
             RESOURCES
           </Link>
 
-          <a
-            href="#contact-footer"
+          <Link
+            to={paths.contact}
+            onClick={() => handleLinkClick(paths.contact)}
             className="bg-blue-500 text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
